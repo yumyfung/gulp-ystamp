@@ -48,5 +48,5 @@ Date.prototype.format = function(fmt){
 ```
 使用后样式：
 ```
-.test {background-image:url(slice/black_btn_play.png)?max_age=2592000&d=20150514221347}
+.test {background-image:url(slice/black_btn_play.png?max_age=2592000&d=20150514221347)}
 ```
