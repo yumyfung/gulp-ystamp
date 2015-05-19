@@ -10,6 +10,9 @@ stamp：参数对象，可以设置任意想添加的参数key和value
 callback(stream, backgroundImgs)：回调函数，返回stream流和每个样式文件中的所有图片数组集合
 ## 使用
 ```Javascript
+var gulp = require('gulp');
+var yStamp = require('gulp-ystamp');
+
 gulp.src('style/**/*.css').pipe(yStamp({
     stamp: {
         max_age: '2592000',
@@ -39,4 +42,13 @@ Date.prototype.format = function(fmt){
   fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));   
   return fmt;   
 }
+```
+## 效果
+使用前样式：
+```
+.test {background-image:url(slice/black_btn_play.png)}
+```
+使用后样式：
+```
+.test {background-image:url(slice/black_btn_play.png)?max_age=2592000&d=20150514221347}
 ```
