@@ -6,6 +6,7 @@ npm install --save-dev gulp-ystamp
 ```
 ## 参数
 stamp：参数对象，可以设置任意想添加的参数key和value
+
 callback(stream, backgroundImgs)：回调函数，返回stream流和每个样式文件中的所有图片数组集合
 ## 使用
 ```Javascript
