@@ -19,9 +19,7 @@ gulp.src('style/**/*.css').pipe(yStamp({
         d: (new Date()).format("yyyyMMddhhmmss")
     },
     callback: function(stream, backgroundImgs){
-        stream.pipe(gulp.dest(dir)).pipe(next(function(){
-            console.log('样式上传到完毕...');
-        }));
+        stream.pipe(gulp.dest(dir));
     }
 }));
 
