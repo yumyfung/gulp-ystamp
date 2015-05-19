@@ -1,0 +1,28 @@
+{
+  "name": "gulp-ystamp",
+  "version": "1.0.0",
+  "description": "gulpplugin gulp-ystamp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulpplugin"
+  ],
+  "author": "yumyfung",
+  "license": "ISC",
+  "devDependencies": {
+    "through-gulp": "^0.3.8"
+  },
+  "dependencies": {
+    "through-gulp": "^0.3.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yumyfung/gulp-ystamp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yumyfung/gulp-ystamp/issues"
+  },
+  "homepage": "https://github.com/yumyfung/gulp-ystamp#readme"
+}
