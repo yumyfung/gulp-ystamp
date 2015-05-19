@@ -15,16 +15,12 @@ gulp.src('style/**/*.css').pipe(yStamp({
         d: (new Date()).format("yyyyMMddhhmmss")
     },
     callback: function(stream, backgroundImgs){
-        //需不需要把相关资源也上传
-        if(argv.r){
-            Common.imgFiles = Common.imgFiles.concat(backgroundImgs).unique();
-        }
         stream.pipe(gulp.dest(dir)).pipe(next(function(){
             console.log('样式上传到完毕...');
-            cb && typeof cb == 'function' ? cb() : '';
         }));
     }
 }));
+
 Date.prototype.format = function(fmt){ 
   var o = {   
     "M+" : this.getMonth()+1,                 //月份   
